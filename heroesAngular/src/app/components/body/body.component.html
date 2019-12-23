@@ -2,14 +2,14 @@
     <div class="col">
         <h1>Ng*If</h1>
         <hr>
-        <div class="card text-white mb-3 bg-primary" style="width: 100%;">
+        <div *ngIf="mostrar" class="card text-white mb-3 bg-primary" style="width: 100%;">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title">{{frase.autor}}</h5>
+              <p class="card-text">{{frase.mensaje}}</p>
             </div>
           </div>
 
-          <button class="btn btn-outline-primary btn-block">
+          <button (click)="mostrar = !mostrar" class="btn btn-outline-primary btn-block">
               Mostrar/Ocultar
           </button>
     </div>
@@ -17,13 +17,10 @@
     <div class="col">
         <h1>ng*For</h1>
         <hr>
-
         <ul class="list-group">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Morbi leo risus</li>
-            <li class="list-group-item">Porta ac consectetur ac</li>
-            <li class="list-group-item">Vestibulum at eros</li>
+            <li *ngFor="let personaje of personajes; let i= index" class="list-group-item">
+              {{i+1}} - {{ personaje }}
+            </li>
           </ul>
     </div>
 </div>
