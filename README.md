@@ -4,15 +4,4 @@ Este repositorio es de utilidad para uso didáctico, en ningún caso de uso come
 
 Por favor abstenganse de colaborar en este repositorio.
 
-Un saludo.
-
-   .--.  .-" ||| "-.  .--.
-  / .. \/  .-. .-.  \/ .. \
- | |  '|  /   Y   \  |'  | |
- | \   \  \ 0 | 0 /  /   / |
-  \ '- ,\.-"`` ``"-./, -' /
-   `'-' /_   ^ ^   _\ '-'`
-       |  \._   _./  |                                                  
-       \   \ `~` /   /
-        '._ '-=-' _.'             
-           '~---~'
+Un saludo. ^^
