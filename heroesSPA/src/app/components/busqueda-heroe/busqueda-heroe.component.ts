@@ -13,7 +13,7 @@ export class BusquedaHeroeComponent implements OnInit {
   heroes:any[] = [];
   termino:string;
 
-  constructor(private activatedRoute:ActivatedRoute,private router:Router, private _heroesService:HeroesService) {
+  constructor(private activatedRoute:ActivatedRoute, private _heroesService:HeroesService) {
 
   }
 
@@ -22,10 +22,6 @@ export class BusquedaHeroeComponent implements OnInit {
       this.termino = params['termino'];
       this.heroes = this._heroesService.buscarHeroes(params['termino']);
     });
-  }
-
-  verHeroe(idx:number){
-    this.router.navigate (['/heroe', idx]);
   }
 
 }
