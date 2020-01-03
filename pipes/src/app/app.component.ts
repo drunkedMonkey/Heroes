@@ -15,6 +15,7 @@ export class AppComponent {
   a:number = 0.234;
   dolar:number = 1234.5;
 
+
   heroe={
     nombre:"Logan",
     clave:"Lobezno",
@@ -30,4 +31,8 @@ export class AppComponent {
   });
 
   fecha= new Date();
+
+  video = "https://www.youtube.com/embed/Fe9LYCorfiE";
+
+  activar:boolean = true;
 }
